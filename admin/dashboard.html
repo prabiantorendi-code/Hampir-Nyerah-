@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Naufal Studio Gaming</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        Admin Panel
+      </div>
+      <ul class="sidebar-nav" style="flex: 1;">
+        <a href="dashboard.html">
+          <li class="nav-item active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+            Dashboard
+          </li>
+        </a>
+        <a href="games.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><circle cx="15" cy="13" r="1"></circle><circle cx="18" cy="11" r="1"></circle></svg>
+            Kelola Games
+          </li>
+        </a>
+        <a href="products.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+            Kelola Produk
+          </li>
+        </a>
+        <a href="payment-image.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            Gambar Pembayaran
+          </li>
+        </a>
+        <a href="whatsapp.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Pengaturan WA
+          </li>
+        </a>
+        <a href="contact-edit.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Edit Info Kontak
+          </li>
+        </a>
+        <a href="settings.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            Pengaturan Web
+          </li>
+        </a>
+        <a href="manage-admin.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            Kelola Admin
+          </li>
+        </a>
+      </ul>
+      <div style="padding: 20px;">
+        <button id="logoutBtn" class="btn btn-outline" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          Logout
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      
+      <header class="navbar" style="padding: 15px 30px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <button id="menuToggle" class="btn-icon" style="display: none; background: transparent; border: none; color: white; cursor: pointer;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <h2 class="admin-title" style="margin: 0; font-size: 20px;">Dashboard</h2>
+        </div>
+        
+        <div class="admin-profile">
+          <div style="text-align: right; display: none; @media(min-width: 768px){display: block;}">
+            <div style="font-weight: 600; font-size: 14px;">Administrator</div>
+            <div id="adminUserEmail" style="color: var(--text-secondary); font-size: 12px;">admin@loading...</div>
+          </div>
+          <div class="admin-avatar">A</div>
+        </div>
+      </header>
+
+      <div class="page-container">
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><circle cx="15" cy="13" r="1"></circle><circle cx="18" cy="11" r="1"></circle></svg>
+            </div>
+            <div class="stat-info">
+              <h3 id="totalGamesCount">-</h3>
+              <p>Total Game</p>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon" style="color: var(--color-accent); background-color: rgba(123, 47, 190, 0.2);">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+            </div>
+            <div class="stat-info">
+              <h3 id="totalProductsCount">-</h3>
+              <p>Total Produk / Denom</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" style="color: var(--color-success); background-color: rgba(0, 200, 83, 0.2);">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="stat-info">
+              <h3>24/7</h3>
+              <p>Sistem Aktif</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <div class="table-header-actions">
+            <h3 style="margin: 0; font-size: 18px;">Informasi Sistem</h3>
+          </div>
+          
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Pemberitahuan</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Pencatatan Transaksi</strong><br>
+                  <span style="font-size: 12px; color: var(--text-secondary);">Seluruh proses checkout dan pesanan masuk saat ini langsung diteruskan ke WhatsApp Admin. Tidak ada pencatatan database untuk riwayat order di panel ini.</span>
+                </td>
+                <td><span class="status-badge status-active">WhatsApp Checkout Aktif</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Manajemen Konten</strong><br>
+                  <span style="font-size: 12px; color: var(--text-secondary);">Anda dapat menambah, mengubah, atau menghapus daftar Game dan Produk melalui menu di sidebar kiri. Perubahan akan langsung tampil di halaman utama.</span>
+                </td>
+                <td><span class="status-badge status-active">Database Terhubung</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <style>
+    @media (max-width: 768px) {
+      #menuToggle { display: block !important; }
+    }
+  </style>
+
+  <script type="module" src="../js/firebase-config.js"></script>
+  <script type="module" src="../js/auth.js"></script>
+  <script type="module">
+    import { db, collection, getDocs } from '../js/firebase-config.js';
+    import { checkAuth } from '../js/auth.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Toggle Sidebar Mobile
+      const menuToggle = document.getElementById('menuToggle');
+      const sidebar = document.getElementById('sidebar');
+      if (menuToggle && sidebar) {
+        menuToggle.addEventListener('click', () => {
+          sidebar.classList.toggle('show');
+        });
+      }
+
+      // Load Statistics
+      try {
+        const gamesSnap = await getDocs(collection(db, 'games'));
+        document.getElementById('totalGamesCount').textContent = gamesSnap.size;
+
+        const productsSnap = await getDocs(collection(db, 'products'));
+        document.getElementById('totalProductsCount').textContent = productsSnap.size;
+      } catch (error) {
+        console.error("Gagal memuat statistik", error);
+        document.getElementById('totalGamesCount').textContent = "Error";
+        document.getElementById('totalProductsCount').textContent = "Error";
+      }
+    });
+  </script>
+</body>
+</html>
+
