@@ -7,13 +7,13 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstati
 
 // Ganti dengan config Firebase sendiri saat deploy
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "YOUR_DATABASE_URL",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+apiKey: "AIzaSyCnNTd6qx53kL490UUd7QWNAT_qmzsSw-Q",
+authDomain: "games-top-up-b8a67.firebaseapp.com",
+projectId: "games-top-up-b8a67",
+storageBucket: "games-top-up-b8a67.firebasestorage.app",
+messagingSenderId: "225580199940",
+appId: "1:225580199940:web:e30c261f0b731721588551",
+measurementId: "G-1CSZPG8361"
 };
 
 // Initialize Firebase
