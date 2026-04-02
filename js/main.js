@@ -132,7 +132,7 @@ const loadGameDetail = async () => {
     }
 
     // Get Products (Denominations)
-    const productsQ = query(collection(db, 'products'), where('gameId', '==', gameId), where('status', '==', 'active'));
+    const productsQ = query(collection(db, 'products'), where('gameId', '==', gameId));
     const productsSnap = await getDocs(productsQ);
     
     const denomGrid = document.getElementById('denom-grid');
