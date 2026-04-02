@@ -3,142 +3,478 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naufal Studio Gaming - Top Up Game Murah & Terpercaya</title>
+  <meta name="description" content="Naufal Studio Games - Top Up Game Murah, Cepat, Terpercaya">
+  <title>Naufal Studio Games - Top Up Game</title>
+  
   <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <div class="app-container">
-    
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-logo">
-        Naufal Studio
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-text">NSG</span>
+        <span class="brand-sub">Studio</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="#games" class="nav-link">Games</a>
+        <a href="#cara-order" class="nav-link">Cara Order</a>
+        <a href="#cek-pesanan" class="nav-link">Cek Pesanan</a>
+        <a href="#review" class="nav-link">Review</a>
+        <a href="contact.html" class="nav-link">Kontak</a>
       </div>
-      <ul class="sidebar-nav">
-        <a href="index.html">
-          <li class="nav-item active">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-            Home
-          </li>
-        </a>
-        <a href="index.html#games">
-          <li class="nav-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><circle cx="15" cy="13" r="1"></circle><circle cx="18" cy="11" r="1"></circle></svg>
-            Games
-          </li>
-        </a>
-        <a href="index.html#promo">
-          <li class="nav-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8l4 4-4 4M8 12h7"></path></svg>
-            Promo
-          </li>
-        </a>
-        <a href="contact.html">
-          <li class="nav-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            Contact
-          </li>
-        </a>
-      </ul>
-    </aside>
+      <div class="navbar-right">
+        <a href="#cek-pesanan" class="btn btn-secondary btn-sm">Cek Pesanan</a>
+        <a href="admin/login.html" class="navbar-cta">Login Admin</a>
+      </div>
+      <button class="navbar-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
 
-    <main class="main-content">
-      
-      <header class="navbar">
-        <button id="menuToggle" class="btn-icon" style="display: none; background: transparent; border: none; color: white; cursor: pointer;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+  <section class="hero" id="hero">
+    <div class="hero-slider" data-autoslide="4000">
+      <div class="hero-slide active">
+        <span class="badge">🔥 Top Up Tercepat</span>
+        <h1 class="hero-title">Top Up Game Murah & Cepat</h1>
+        <p class="hero-subtitle">Proses instan, harga terjangkau, 24 jam siap melayani</p>
+        <div class="hero-actions">
+          <a href="#games" class="btn btn-primary hero-btn">Order Sekarang</a>
+          <a href="#cara-order" class="btn btn-secondary hero-btn">Cara Order</a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <span class="badge">⚡ Promo Hari Ini</span>
+        <h1 class="hero-title">Flash Sale! Hemat Hingga 20%</h1>
+        <p class="hero-subtitle">Penawaran terbatas, jangan sampai ketinggalan</p>
+        <div class="hero-actions">
+          <a href="#flash-sale" class="btn btn-primary hero-btn">Lihat Promo</a>
+          <a href="#games" class="btn btn-secondary hero-btn">Pilih Game</a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <span class="badge">✅ Proses 1 Menit</span>
+        <h1 class="hero-title">Order Langsung via WhatsApp</h1>
+        <p class="hero-subtitle">Tidak perlu daftar akun, langsung order dan bayar</p>
+        <div class="hero-actions">
+          <a href="#games" class="btn btn-primary hero-btn">Order Sekarang</a>
+          <a href="#cara-order" class="btn btn-secondary hero-btn">Cara Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <span class="hero-dot active" data-slide="0"></span>
+      <span class="hero-dot" data-slide="1"></span>
+      <span class="hero-dot" data-slide="2"></span>
+    </div>
+    <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+  </section>
+
+  <section class="search-section" id="search">
+    <div class="container">
+      <div class="search-wrapper">
+        <div class="search-box">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" class="search-input" id="searchInput" placeholder="Cari game... (Mobile Legends, Free Fire, dll)" autocomplete="off">
+        </div>
+        <div class="filter-category">
+          <button class="filter-btn active" data-category="all">Semua</button>
+          <button class="filter-btn" data-category="moba">MOBA</button>
+          <button class="filter-btn" data-category="battle-royale">Battle Royale</button>
+          <button class="filter-btn" data-category="rpg">RPG</button>
+          <button class="filter-btn" data-category="lainnya">Lainnya</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="games-section" id="games">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">🎮 Pilih Game</h2>
+        <p class="section-subtitle">Pilih game favoritmu dan top up sekarang</p>
+      </div>
+      <div class="games-grid" id="gamesGrid">
+        <div class="game-card" data-game="mobile-legends" data-category="moba">
+          <div class="game-card-image">
+            <img src="assets/images/mobile-legends.jpg" alt="Mobile Legends">
+            <span class="game-badge">HOT</span>
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">Mobile Legends</h3>
+            <p class="game-price">Mulai Rp 1.500</p>
+          </div>
+        </div>
+
+        <div class="game-card" data-game="free-fire" data-category="battle-royale">
+          <div class="game-card-image">
+            <img src="assets/images/free-fire.jpg" alt="Free Fire">
+            <span class="game-badge">POPULAR</span>
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">Free Fire</h3>
+            <p class="game-price">Mulai Rp 1.000</p>
+          </div>
+        </div>
+
+        <div class="game-card" data-game="genshin-impact" data-category="rpg">
+          <div class="game-card-image">
+            <img src="assets/images/genshin-impact.jpg" alt="Genshin Impact">
+            <span class="game-badge">PROMO</span>
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">Genshin Impact</h3>
+            <p class="game-price">Mulai Rp 2.000</p>
+          </div>
+        </div>
+
+        <div class="game-card" data-game="pubg-mobile" data-category="battle-royale">
+          <div class="game-card-image">
+            <img src="assets/images/pubg-mobile.jpg" alt="PUBG Mobile">
+            <span class="game-badge">HOT</span>
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">PUBG Mobile</h3>
+            <p class="game-price">Mulai Rp 1.500</p>
+          </div>
+        </div>
+
+        <div class="game-card" data-game="valorant" data-category="lainnya">
+          <div class="game-card-image">
+            <img src="assets/images/valorant.jpg" alt="Valorant">
+            <span class="game-badge">POPULAR</span>
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">Valorant</h3>
+            <p class="game-price">Mulai Rp 3.000</p>
+          </div>
+        </div>
+
+        <div class="game-card" data-game="clash-of-clans" data-category="lainnya">
+          <div class="game-card-image">
+            <img src="assets/images/clash-of-clans.jpg" alt="Clash of Clans">
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">Clash of Clans</h3>
+            <p class="game-price">Mulai Rp 2.500</p>
+          </div>
+        </div>
+
+        <div class="game-card" data-game="honor-of-kings" data-category="moba">
+          <div class="game-card-image">
+            <img src="assets/images/honor-of-kings.jpg" alt="Honor of Kings">
+            <span class="game-badge">NEW</span>
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">Honor of Kings</h3>
+            <p class="game-price">Mulai Rp 1.500</p>
+          </div>
+        </div>
+
+        <div class="game-card" data-game="call-of-duty" data-category="battle-royale">
+          <div class="game-card-image">
+            <img src="assets/images/call-of-duty.jpg" alt="Call of Duty">
+          </div>
+          <div class="game-card-info">
+            <h3 class="game-name">Call of Duty Mobile</h3>
+            <p class="game-price">Mulai Rp 2.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-section" id="flash-sale">
+    <div class="container">
+      <div class="promo-banner">
+        <div class="promo-content">
+          <span class="promo-label">⚡ FLASH SALE</span>
+          <h2 class="promo-title">Hemat Hingga 20% Hari Ini!</h2>
+          <p class="promo-subtitle">Penawaran terbatas untuk top up Mobile Legends & Free Fire</p>
+        </div>
+        <div class="promo-timer">
+          <div class="timer-box">
+            <span class="timer-value" id="timerJam">00</span>
+            <span class="timer-label">Jam</span>
+          </div>
+          <span class="timer-sep">:</span>
+          <div class="timer-box">
+            <span class="timer-value" id="timerMenit">00</span>
+            <span class="timer-label">Menit</span>
+          </div>
+          <span class="timer-sep">:</span>
+          <div class="timer-box">
+            <span class="timer-value" id="timerDetik">00</span>
+            <span class="timer-label">Detik</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section" id="cara-order">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">📋 Cara Order</h2>
+        <p class="section-subtitle">4 langkah mudah untuk top up game favoritmu</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="how-number">01</div>
+          <div class="how-icon"><i class="fas fa-gamepad"></i></div>
+          <h3 class="how-title">Pilih Game</h3>
+          <p class="how-desc">Cari dan pilih game yang ingin kamu top up</p>
+        </div>
+        <div class="how-card">
+          <div class="how-number">02</div>
+          <div class="how-icon"><i class="fas fa-id-card"></i></div>
+          <h3 class="how-title">Masukkan ID</h3>
+          <p class="how-desc">Input ID game dan server kamu dengan benar</p>
+        </div>
+        <div class="how-card">
+          <div class="how-number">03</div>
+          <div class="how-icon"><i class="fas fa-gem"></i></div>
+          <h3 class="how-title">Pilih Nominal</h3>
+          <p class="how-desc">Pilih jumlah diamond atau item yang kamu inginkan</p>
+        </div>
+        <div class="how-card">
+          <div class="how-number">04</div>
+          <div class="how-icon"><i class="fab fa-whatsapp"></i></div>
+          <h3 class="how-title">Order via WA</h3>
+          <p class="how-desc">Klik Order, otomatis redirect ke WhatsApp admin</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="check-section" id="cek-pesanan">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">🔍 Cek Pesanan</h2>
+        <p class="section-subtitle">Cek status pesananmu via kode order atau WhatsApp</p>
+      </div>
+      <div class="check-wrapper">
+        <div class="check-box">
+          <div class="form-group">
+            <label class="form-label" for="orderCode">Kode Pesanan</label>
+            <div class="input-with-btn">
+              <input type="text" class="form-control" id="orderCode" placeholder="Masukkan kode pesanan">
+              <button class="btn btn-primary" id="btnCekPesanan"><i class="fas fa-search"></i> Cek</button>
+            </div>
+          </div>
+          <div class="check-result" id="checkResult"></div>
+        </div>
+        <div class="check-wa">
+          <p>Atau langsung tanya via WhatsApp</p>
+          <a href="#" target="_blank" class="btn btn-success btn-full" id="btnCekWA">
+            <i class="fab fa-whatsapp"></i> Tanya via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="review-section" id="review">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">⭐ Review Pembeli</h2>
+        <p class="section-subtitle">Apa kata mereka tentang Naufal Studio Games</p>
+      </div>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">A</div>
+            <div class="review-info">
+              <span class="review-name">Andi Pratama</span>
+              <span class="review-game">Mobile Legends</span>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="review-text">Top up cepat banget! Kurang dari 1 menit sudah masuk. Recommended!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">S</div>
+            <div class="review-info">
+              <span class="review-name">Sari Dewi</span>
+              <span class="review-game">Free Fire</span>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="review-text">Harga murah, admin ramah, proses cepat. Sudah langganan di sini!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">R</div>
+            <div class="review-info">
+              <span class="review-name">Rizky Fauzan</span>
+              <span class="review-game">Genshin Impact</span>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="review-text">Pelayanan 24 jam, sangat membantu. Harga juga bersaing!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">N</div>
+            <div class="review-info">
+              <span class="review-name">Nina Safitri</span>
+              <span class="review-game">PUBG Mobile</span>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="review-text">Sudah 5 kali order di sini, tidak pernah mengecewakan. Top!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tnc-section" id="syarat-ketentuan">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">📜 Syarat & Ketentuan</h2>
+        <p class="section-subtitle">Baca sebelum melakukan pembelian</p>
+      </div>
+      <div class="tnc-grid">
+        <div class="tnc-card">
+          <i class="fas fa-check-circle tnc-icon"></i>
+          <h3 class="tnc-title">Keamanan Transaksi</h3>
+          <p class="tnc-desc">Semua transaksi diproses manual oleh admin. Pastikan ID game kamu benar sebelum order.</p>
+        </div>
+        <div class="tnc-card">
+          <i class="fas fa-clock tnc-icon"></i>
+          <h3 class="tnc-title">Waktu Proses</h3>
+          <p class="tnc-desc">Proses top up 1-5 menit setelah konfirmasi pembayaran diterima admin.</p>
+        </div>
+        <div class="tnc-card">
+          <i class="fas fa-ban tnc-icon"></i>
+          <h3 class="tnc-title">Pembatalan Order</h3>
+          <p class="tnc-desc">Order yang sudah diproses tidak dapat dibatalkan. Pastikan data benar sebelum order.</p>
+        </div>
+        <div class="tnc-card">
+          <i class="fas fa-headset tnc-icon"></i>
+          <h3 class="tnc-title">Layanan 24 Jam</h3>
+          <p class="tnc-desc">Admin siap melayani 24 jam sehari, 7 hari seminggu via WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-brand">NSG Studio</a>
+          <p class="footer-desc">Top up game murah, cepat, dan terpercaya. Proses 1 menit via WhatsApp.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Menu</h4>
+          <ul class="footer-links">
+            <li><a href="#games">Games</a></li>
+            <li><a href="#cara-order">Cara Order</a></li>
+            <li><a href="#cek-pesanan">Cek Pesanan</a></li>
+            <li><a href="#review">Review</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Layanan</h4>
+          <ul class="footer-links">
+            <li><a href="#">Mobile Legends</a></li>
+            <li><a href="#">Free Fire</a></li>
+            <li><a href="#">Genshin Impact</a></li>
+            <li><a href="#">PUBG Mobile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Kontak</h4>
+          <ul class="footer-contact">
+            <li><i class="fab fa-whatsapp"></i> WhatsApp: 0812-XXXX-XXXX</li>
+            <li><i class="fab fa-instagram"></i> Instagram: @naufalstudio</li>
+            <li><i class="fas fa-envelope"></i> Email: cs@naufalstudio.biz.id</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Naufal Studio Games. All rights reserved.</p>
+        <a href="admin/login.html" class="footer-admin-link">Admin Panel</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOrder">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalGameName">[Nama Game]</h3>
+        <button class="modal-close" id="btnCloseModal"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">ID Game *</label>
+          <input type="text" class="form-control" id="inputGameId" placeholder="Masukkan ID Game kamu" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Server (Opsional)</label>
+          <div class="server-options" id="serverOptions">
+            <button class="server-btn" data-server="Indonesia">Indonesia</button>
+            <button class="server-btn" data-server="Malaysia">Malaysia</button>
+            <button class="server-btn" data-server="Philippines">Philippines</button>
+            <button class="server-btn" data-server="Singapore">Singapore</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Pilih Nominal *</label>
+          <div class="nominal-options" id="nominalOptions"></div>
+        </div>
+        <div class="order-summary" id="orderSummary"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btnBatalOrder">Batal</button>
+        <button class="btn btn-primary" id="btnKirimOrder">
+          <i class="fab fa-whatsapp"></i> Order via WhatsApp
         </button>
-        
-        <div class="nav-search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-secondary);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="searchInput" placeholder="Cari game atau voucher...">
-        </div>
-        
-        <div class="nav-actions">
-          <a href="admin/login.html" class="btn btn-primary">Login Admin</a>
-        </div>
-      </header>
-
-      <div class="page-container">
-        
-        <section class="hero-banner" id="promo">
-          <div class="hero-content">
-            <h1>Promo Top Up Spesial</h1>
-            <p>Dapatkan diskon hingga 50% untuk Mobile Legends dan Free Fire minggu ini!</p>
-            <a href="#games" class="btn btn-primary">Top Up Sekarang</a>
-          </div>
-        </section>
-
-        <div class="section-header">
-          <h2 class="section-title">Populer</h2>
-        </div>
-        <div class="game-grid" id="populer-grid">
-          <p style="color: var(--text-secondary);">Memuat game populer...</p>
-        </div>
-
-        <span id="games"></span>
-
-        <div class="section-header">
-          <h2 class="section-title">Games Mobile</h2>
-        </div>
-        <div class="game-grid" id="mobile-grid">
-          <p style="color: var(--text-secondary);">Memuat game mobile...</p>
-        </div>
-
-        <div class="section-header">
-          <h2 class="section-title">Games PC</h2>
-        </div>
-        <div class="game-grid" id="pc-grid">
-          <p style="color: var(--text-secondary);">Memuat game PC...</p>
-        </div>
-
-        <div class="section-header">
-          <h2 class="section-title">Voucher</h2>
-        </div>
-        <div class="game-grid" id="voucher-grid">
-          <p style="color: var(--text-secondary);">Memuat voucher...</p>
-        </div>
-
       </div>
-
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h3>Naufal Studio Gaming</h3>
-            <p>Layanan top up game dan voucher termurah, tercepat, dan terpercaya di Indonesia. Buka 24 Jam.</p>
-          </div>
-          <div class="footer-links">
-            <h4>Menu Cepat</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#games">Semua Game</a></li>
-              <li><a href="contact.html">Hubungi Kami</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Bantuan</h4>
-            <ul>
-              <li><a href="contact.html">Cara Pembelian</a></li>
-              <li><a href="contact.html">Syarat & Ketentuan</a></li>
-              <li><a href="contact.html">Kebijakan Privasi</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          &copy; 2026 Naufal Studio Gaming. All rights reserved.
-        </div>
-      </footer>
-
-    </main>
+    </div>
   </div>
 
-  <style>
-    @media (max-width: 768px) {
-      #menuToggle { display: block !important; }
-    }
-  </style>
+  <div class="toast-container" id="toastContainer"></div>
 
-  <script type="module" src="js/main.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/whatsapp.js"></script>
 </body>
 </html>
