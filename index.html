@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naufal Studio Gaming - Top Up Game Murah & Terpercaya</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        Naufal Studio
+      </div>
+      <ul class="sidebar-nav">
+        <a href="index.html">
+          <li class="nav-item active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            Home
+          </li>
+        </a>
+        <a href="index.html#games">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M6 12h4"></path><path d="M8 10v4"></path><circle cx="15" cy="13" r="1"></circle><circle cx="18" cy="11" r="1"></circle></svg>
+            Games
+          </li>
+        </a>
+        <a href="index.html#promo">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8l4 4-4 4M8 12h7"></path></svg>
+            Promo
+          </li>
+        </a>
+        <a href="contact.html">
+          <li class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Contact
+          </li>
+        </a>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      
+      <header class="navbar">
+        <button id="menuToggle" class="btn-icon" style="display: none; background: transparent; border: none; color: white; cursor: pointer;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        
+        <div class="nav-search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-secondary);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="searchInput" placeholder="Cari game atau voucher...">
+        </div>
+        
+        <div class="nav-actions">
+          <a href="admin/login.html" class="btn btn-primary">Login Admin</a>
+        </div>
+      </header>
+
+      <div class="page-container">
+        
+        <section class="hero-banner" id="promo">
+          <div class="hero-content">
+            <h1>Promo Top Up Spesial</h1>
+            <p>Dapatkan diskon hingga 50% untuk Mobile Legends dan Free Fire minggu ini!</p>
+            <a href="#games" class="btn btn-primary">Top Up Sekarang</a>
+          </div>
+        </section>
+
+        <div class="section-header">
+          <h2 class="section-title">Populer</h2>
+        </div>
+        <div class="game-grid" id="populer-grid">
+          <p style="color: var(--text-secondary);">Memuat game populer...</p>
+        </div>
+
+        <span id="games"></span>
+
+        <div class="section-header">
+          <h2 class="section-title">Games Mobile</h2>
+        </div>
+        <div class="game-grid" id="mobile-grid">
+          <p style="color: var(--text-secondary);">Memuat game mobile...</p>
+        </div>
+
+        <div class="section-header">
+          <h2 class="section-title">Games PC</h2>
+        </div>
+        <div class="game-grid" id="pc-grid">
+          <p style="color: var(--text-secondary);">Memuat game PC...</p>
+        </div>
+
+        <div class="section-header">
+          <h2 class="section-title">Voucher</h2>
+        </div>
+        <div class="game-grid" id="voucher-grid">
+          <p style="color: var(--text-secondary);">Memuat voucher...</p>
+        </div>
+
+      </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Naufal Studio Gaming</h3>
+            <p>Layanan top up game dan voucher termurah, tercepat, dan terpercaya di Indonesia. Buka 24 Jam.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Menu Cepat</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#games">Semua Game</a></li>
+              <li><a href="contact.html">Hubungi Kami</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Bantuan</h4>
+            <ul>
+              <li><a href="contact.html">Cara Pembelian</a></li>
+              <li><a href="contact.html">Syarat & Ketentuan</a></li>
+              <li><a href="contact.html">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 Naufal Studio Gaming. All rights reserved.
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <style>
+    @media (max-width: 768px) {
+      #menuToggle { display: block !important; }
+    }
+  </style>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
